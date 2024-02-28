@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/beats-template/static/css/main.554567fe.css",
+    "main.js": "/beats-template/static/js/main.82988134.js",
+    "static/media/image1.png": "/beats-template/static/media/image1.618522c3411bc7566ae1.png",
+    "static/media/image2.png": "/beats-template/static/media/image2.04b1324104fc9bd1a54a.png",
+    "static/media/product9.png": "/beats-template/static/media/product9.a386e4794e7d6704cc5a.png",
+    "index.html": "/beats-template/index.html",
+    "main.554567fe.css.map": "/beats-template/static/css/main.554567fe.css.map",
+    "main.82988134.js.map": "/beats-template/static/js/main.82988134.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.554567fe.css",
+    "static/js/main.82988134.js"
+  ]
+}
