@@ -1,9 +1,29 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
+  background-color: #ffff;
+  height: 100%;
 }
-
-.App-logo {
+.navbar {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 99;
+  padding: 0px 10%;
+  width: 100%;
+  height: 150px;
+}
+.nav-items {
+  /* margin-right: 30px; */
+}
+.nav-items > span {
+  padding: 35px;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+.App-image {
   height: 500px;
   width: 400px;
   pointer-events: none;
@@ -12,9 +32,8 @@
   transform: translate(250%, 50%);
   opacity: 0;
 }
-
 .App-header {
-  background-color: #525252;
+  /* background-color: #525252; */
   min-height: 100vh;
   display: flex;
   position: relative;
@@ -25,12 +44,40 @@ button {
   position: absolute;
 }
 
-.App-logo-arr {
-  opacity: 1;
-  animation: image-arrival 1s linear;
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  top: 35%;
+  left: 8%;
+  width: 25%;
 }
-.App-logo-dep {
-  animation: image-departure 1s linear;
+.title-wrapper > h1 {
+  font-family: "Sansita", sans-serif;
+  font-weight: 800;
+  color: #51068b;
+  font-size: 87px;
+  font-style: italic;
+  word-spacing: 10px;
+  line-height: 70px;
+  padding: 0px 30px;
+  margin-bottom: 8%;
+}
+
+.title-wrapper p {
+  font-family: "Proza Libre", sans-serif;
+  padding: 0px 30px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+}
+.App-image-arr {
+  opacity: 1;
+  animation: image-arrival 0.3s linear;
+}
+.App-image-dep {
+  animation: image-departure 0.3s linear;
   animation-iteration-count: 1;
 }
 
@@ -54,4 +101,73 @@ button {
     transform: translate(-100%, 200%);
     opacity: 0.9;
   }
+}
+
+.upper-circle {
+  height: 1000px;
+  width: 1050px;
+  border-radius: 50%;
+  background: linear-gradient(165deg, #bfbdff 20%, #ffff 80%);
+  box-shadow: 0 0 30px 0px #ffff;
+  opacity: 0.6;
+  transform: translate(110%, -20%);
+}
+
+.lower-circle {
+  height: 1000px;
+  width: 1050px;
+  border-radius: 50%;
+  background: linear-gradient(-10deg, #e67178 5%, #ffff 70%);
+  box-shadow: 0 0 30px 0px #ffff;
+  opacity: 0.5;
+  transform: translate(-120%, 40%);
+}
+
+.arrow-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  bottom: 50%;
+  right: 12%;
+  padding: 15px;
+  background-color: #faa4dd5e;
+  border: 10px solid #faa4dd91;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  justify-content: space-between;
+  padding: 0px 8%;
+  width: 100%;
+  height: 50px;
+  margin-top: -100px;
+}
+.footer-items {
+  display: flex;
+  align-items: center;
+}
+.footer-items > span {
+  font-family: "Proza Libre", sans-serif;
+  z-index: 999;
+  padding: 15px;
+  color: #4a4d9d;
+  font-size: 14px;
+  font-weight: 500;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-item-icons {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+.footer-item-icons > img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
